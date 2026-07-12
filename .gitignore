@@ -1,0 +1,21 @@
+# Dependencies (installed by `composer install` from composer.json)
+/vendor/
+
+# Lock file: a library should not ship it (apps commit it, libraries don't)
+/composer.lock
+
+# Local environment (never publish real credentials)
+.env
+
+# PHPUnit
+/.phpunit.cache/
+.phpunit.result.cache
+
+# Local commit message draft
+/commit-message.txt
+
+# IDE / OS noise
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

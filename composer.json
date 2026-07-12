@@ -1,0 +1,57 @@
+{
+    "name": "hstanleycrow/easyphpdbcore",
+    "description": "Lightweight PDO-based database layer with a simple CRUD model for PHP.",
+    "type": "library",
+    "keywords": [
+        "php",
+        "pdo",
+        "mysql",
+        "mariadb",
+        "database",
+        "crud",
+        "model",
+        "query-builder"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/hstanleycrow/EasyPHPDBCore",
+    "authors": [
+        {
+            "name": "Harold Rivas AKA Harold Crow",
+            "email": "holamundo@microaplicaciones.com",
+            "homepage": "https://www.microaplicaciones.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "monolog/monolog": "^3.10",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "suggest": {
+        "monolog/monolog": "Provides a PSR-3 logger to capture database errors (any PSR-3 logger works)."
+    },
+    "autoload": {
+        "psr-4": {
+            "hstanleycrow\\EasyPHPDBCore\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "hstanleycrow\\EasyPHPDBCore\\Tests\\": "tests/",
+            "hstanleycrow\\EasyPHPDBCore\\Examples\\": "examples/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
